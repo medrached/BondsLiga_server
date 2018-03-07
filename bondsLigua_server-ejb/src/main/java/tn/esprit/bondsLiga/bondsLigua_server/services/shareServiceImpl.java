@@ -35,6 +35,12 @@ public class shareServiceImpl implements shareServices {
 		entityManager.merge(S);
 		
 	}
+
+	@Override
+	public void findall() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 
 }

@@ -11,4 +11,5 @@ public interface shareServices {
 	Share searchById(int id);
 	void delete(int id);
 	void updateShare(Share c);
+	void findall();
 }
