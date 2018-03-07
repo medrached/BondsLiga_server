@@ -15,6 +15,8 @@ public class Share implements Serializable {
 	private int reference;
 	private float price;
 	private float PotentialFluctuationState;
+	
+	
 	public int getReference() {
 		return reference;
 	}
@@ -33,7 +35,7 @@ public class Share implements Serializable {
 	public void setPotentialFluctuationState(float potentialFluctuationState) {
 		PotentialFluctuationState = potentialFluctuationState;
 	}
-	
+
 	@ManyToOne
 	private Transaction transaction;
 	public Transaction getTransaction() {
@@ -42,7 +44,7 @@ public class Share implements Serializable {
 	public void setTransaction(Transaction transaction) {
 		this.transaction = transaction;
 	}
-	
+/*	
 	@ManyToOne
 	private Company company;
 	public Company getCompany() {
@@ -51,7 +53,7 @@ public class Share implements Serializable {
 	public void setCompany(Company company) {
 		this.company = company;
 	}
-	
+	*/
 
 	
 }

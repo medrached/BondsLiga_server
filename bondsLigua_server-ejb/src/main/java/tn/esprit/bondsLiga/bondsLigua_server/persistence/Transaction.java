@@ -46,7 +46,7 @@ public class Transaction implements Serializable {
 	public void setPortfolio(Portfolio portfolio) {
 		this.portfolio = portfolio;
 	}
-	
+	/*
 	@OneToMany(mappedBy="transaction")
 	private List<Share> shares;
 
@@ -57,6 +57,6 @@ public class Transaction implements Serializable {
 		this.shares = shares;
 	}
 	
-	
+	*/
 	
 }

@@ -18,8 +18,11 @@ public class Company implements Serializable{
 	private float operatingIncome;
 	private int freeShareNumber;
 	private int tokenSharesNUmber;
+	@OneToMany//(mappedBy="company")
+	private  List<Share> shares;
+	
 	public int getImmatriculationNumber() {
-		return immatriculationNumber;
+	return immatriculationNumber;
 	}
 	public void setImmatriculationNumber(int immatriculationNumber) {
 		this.immatriculationNumber = immatriculationNumber;
@@ -43,14 +46,14 @@ public class Company implements Serializable{
 		this.tokenSharesNUmber = tokenSharesNUmber;
 	}
 	
-	@OneToMany(mappedBy="company")
-	private  List<Share> shares;
+	
 	
 	public List<Share> getShares() {
 		return shares;
 	}
 	public void setShares(List<Share> shares) {
 		this.shares = shares;
+		
 	}
 	
 	
